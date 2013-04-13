@@ -1,0 +1,1 @@
+edButtons[edButtons.length] = new edButton( 'menuitem', 'menu item', '[menuitem name="" desc="" price=""]', '', '' );
