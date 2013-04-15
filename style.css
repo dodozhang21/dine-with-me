@@ -335,7 +335,8 @@ input[type="submit"]:hover {
 }
 #widgets,
 #content,
-#content-full {
+#content-full,
+#content-archive {
 	margin-top: 0;
 }
 #wp-calendar th, 

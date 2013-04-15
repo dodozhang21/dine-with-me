@@ -10,7 +10,7 @@ version 1.0.0 - Hello world
 --------------------------------------------------------------------------------
 Dine with Me comes with the shortcode:
 
-[menitem name="" desc="" price=""]
+[menuitem name="" desc="" price=""]
 
 You may use it in any pages or posts. The theme will style the output into an menu item.
 In addition, you may use the menu item button on the editor toolbar.
@@ -23,13 +23,10 @@ visit http://pure-essence.net/2013/04/13/dine-with-me-child-theme-for-responsive
 --------------------------------------------------------------------------------
  Licenses:
 --------------------------------------------------------------------------------
-Dine with Me WordPress Theme, copyright 2013 Ying Zhang
-Dine with Me is distributed under the terms of the GNU GPL3. See license.txt for further details.
-
 Dine with Me is a child theme of Responsive copyright 2003-2013 Emil Uzelac, CyberChimps Inc
-Responsive is distributed under the terms of the GNU GPL3
+Responsive is distributed under the terms of the GNU GPL3. See license.txt for further details.
 
-The resources used in daffodil Theme are all GPL-compatible:
+The resources used in Dine with Me Theme are all GPL-compatible:
 
 == Bundled Resources: Javascript ==
 
