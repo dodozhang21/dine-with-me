@@ -28,6 +28,10 @@ Responsive is distributed under the terms of the GNU GPL3. See license.txt for f
 
 The resources used in Dine with Me Theme are all GPL-compatible:
 
+== Theme PSD Template ==
+
+Royalty Free PSD template from graphicsfuel.com http://www.graphicsfuel.com/2011/01/cafe-restaurant-website-psd-template/
+
 == Bundled Resources: Javascript ==
 
 * js/*.js: http://www.opensource.org/licenses/mit-license.php
