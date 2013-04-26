@@ -4,7 +4,7 @@ Theme URI: http://pure-essence.net/2013/04/13/dine-with-me-child-theme-for-respo
 Author: Ying Zhang
 Author URI: http://regretless.com
 Description: Child theme for responsive with a restaurant accent. It comes with a menuitem shortcode that allows you to easily create a menu page.
-Version: 1.0.2
+Version: 1.0.3
 Tags: black, brown, pink, red, tan, white, dark, one-column, left-sidebar, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, post-formats
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -868,10 +868,6 @@ img {
 		content: '';
 	}
 
-}
-
-@media screen and (max-width: 480px) {
-
 	#footer {
 		text-align: center;
 		background: none;
@@ -889,10 +885,9 @@ img {
 		left: 0;
 	}
 
-	
+}
 
-	
-
+@media screen and (max-width: 480px) {
 	body {}
 
 	#logo {
