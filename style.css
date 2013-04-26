@@ -855,6 +855,7 @@ img {
 
 	#menu-footer {
 		margin-bottom: 0;
+		padding: 0;
 	}
 
 	#footer .social-icons li:first-child,
@@ -878,11 +879,12 @@ img {
 		background: none;
 	}
 	#footer .social-icons {
-		padding-top: 15px;
+		padding: 0 0 15px 0;
 		text-align: center;
 		background: none;
 		width: 100%;
 		left: 0;
+		position: static;
 	}
 
 }
