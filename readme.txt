@@ -3,6 +3,7 @@ Thank you for choosing Dine with Me Theme.
 Version History:
 
 version 1.0.0 - Hello world
+version 1.0.3 - fixed a few styling bugs
 
 
 --------------------------------------------------------------------------------
