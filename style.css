@@ -4,7 +4,7 @@ Theme URI: http://pure-essence.net/2013/04/13/dine-with-me-child-theme-for-respo
 Author: Ying Zhang
 Author URI: http://regretless.com
 Description: Child theme for responsive with a restaurant accent. It comes with a menuitem shortcode that allows you to easily create a menu page.
-Version: 1.0.3
+Version: 1.0.4
 Tags: black, brown, pink, red, tan, white, dark, one-column, left-sidebar, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, post-formats
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -61,6 +61,15 @@ a:active {
 }
 .top-menu li a:hover {
 	color: #f4e5dc;
+}
+
+.site-name a {
+	color: #E4BCA6;
+	font-family: Nunito,sans-serif;
+}
+
+.site-description {
+	color: #fff;
 }
 
 #header {
@@ -413,20 +422,22 @@ table#wp-calendar {
 	text-align: center;
 }
 
+#footer-wrapper {
+	margin: 0 50px;
+	text-align: center;
+}
+
+#footer-wrapper .grid.col-940 {
+	margin: 0 0 35px 0;
+}
 .copyright,
 .scroll-top,
 .powered {
 	width: auto;
 	position: relative;
-	margin-top: 25px;
+	float: none;
 }
-.copyright {
-	margin-left: 28%;
-}
-.scroll-top {
-}
-.powered {
-}
+
 
 #footer {
 	position: relative;	
@@ -678,12 +689,6 @@ img {
 		float: none;
 	}
 
-	.copyright,
-	.scroll-top,
-	.powered {
-		float: left;
-	}
-
 	#featured-image .fluid-width-video-wrapper {
 		margin: 20px 0 0 0;
 	}
@@ -706,7 +711,6 @@ img {
 	}
 
 	.copyright {
-		margin-left: 20%;
 	}
 
 	.home #widgets div:last-child .widget-wrapper {

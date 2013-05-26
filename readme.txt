@@ -41,6 +41,7 @@ Royalty Free PSD template from graphicsfuel.com http://www.graphicsfuel.com/2011
 == Bundled Resources: Images ==
 
 * images/*.*: http://www.gnu.org/licenses/gpl-2.0.html
+* icons/*.*: http://www.gnu.org/licenses/gpl-2.0.html
 
 
 == Fonts ==
