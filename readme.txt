@@ -7,16 +7,6 @@ version 1.0.3 - fixed a few styling bugs
 
 
 --------------------------------------------------------------------------------
- Shortcode:
---------------------------------------------------------------------------------
-Dine with Me comes with the shortcode:
-
-[menuitem name="" desc="" price=""]
-
-You may use it in any pages or posts. The theme will style the output into an menu item.
-In addition, you may use the menu item button on the editor toolbar.
-
---------------------------------------------------------------------------------
 For support, 
 visit http://pure-essence.net/2013/04/13/dine-with-me-child-theme-for-responsive/
 

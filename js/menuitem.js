@@ -12,7 +12,7 @@
 			   if ((name != null && name != '')
 					&& (desc != null && desc != '')
 					&& (price != null && price != '')) {
-				   ed.execCommand('mceInsertContent', false, '[menitem name="'+name+'" desc="'+desc+'" price="'+price+'"]');
+				   ed.execCommand('mceInsertContent', false, '[menuitem name="'+name+'" desc="'+desc+'" price="'+price+'"]');
 			   }
             }
          });
