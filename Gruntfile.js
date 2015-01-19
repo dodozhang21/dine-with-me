@@ -50,7 +50,7 @@ module.exports = function(grunt) {
 		compress: {
 			release: {
 				options: {
-				  archive: 'oriental.zip'
+				  archive: 'dine-with-me.zip'
 				},
 				files: [
 				  {src: ['images/**'

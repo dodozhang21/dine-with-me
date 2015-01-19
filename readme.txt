@@ -4,6 +4,7 @@ Version History:
 
 version 1.0.0 - Hello world
 version 1.0.3 - fixed a few styling bugs
+version 1.0.6 - fixed the bug where social icons are not linked
 
 
 --------------------------------------------------------------------------------
