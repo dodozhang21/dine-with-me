@@ -6,7 +6,7 @@ Theme URI: http://pure-essence.net/2013/04/13/dine-with-me-child-theme-for-respo
 Author: Ying Zhang
 Author URI: http://regretless.com
 Description: Child theme for responsive with a restaurant accent. It comes with a menuitem shortcode that allows you to easily create a menu page.
-Version: 1.0.6
+Version: 1.0.7
 Tags: black, brown, pink, red, tan, white, dark, one-column, left-sidebar, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, post-formats
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -65,6 +65,12 @@ a {
 		color: #f4e5dc;
 	  }
 	}
+  }
+}
+
+.footer-menu, .top-menu {
+  ul.sub-menu {
+	display: none;
   }
 }
 
@@ -293,13 +299,6 @@ input[type="submit"] {
 }
 
 .home {
-  .widget-wrapper {
-	margin: 0;
-	border: 0;
-	border-radius: 0;
-	padding-bottom: 30px;
-	background: #98c618 url(images/greenBorder.png) repeat-x left bottom;
-  }
   .widget-title-home h3 {
 	text-transform: uppercase;
 	color: #af182a;
@@ -311,17 +310,26 @@ input[type="submit"] {
 
   #widgets {
 	font-family: Nunito,sans-serif;
-	div:nth-of-type(3n-1) .widget-wrapper {
-	  background-color: #e35948;
-	  background-image: url(images/redBorder.png);
-	  color: #000;
-	  h3 {
-		color: #fff;
+	div {
+	  .widget-wrapper {
+		margin: 0;
+		border: 0;
+		border-radius: 0;
+		padding-bottom: 30px;
+		background: #98c618 url(images/greenBorder.png) repeat-x left bottom;
 	  }
-	}
-	div:nth-of-type(3n-2) .widget-wrapper {
-	  background-color: #f7ba05;
-	  background-image: url(images/yellowBorder.png);
+	  &:nth-of-type(3n-1) .widget-wrapper {
+		background-color: #e35948;
+		background-image: url(images/redBorder.png);
+		color: #000;
+		h3 {
+		  color: #fff;
+		}
+	  }
+	  &:nth-of-type(3n-2) .widget-wrapper {
+		background-color: #f7ba05;
+		background-image: url(images/yellowBorder.png);
+	  }
 	}
   }
 }
@@ -504,43 +512,53 @@ img {
 	text-align: center;
 	padding-bottom: 15px;
 	min-height: 18px;
-	li {
-	  background: #e2baa4;
-	  border-right: 10px solid #e2baa4;
-	  padding-top: 5px;
 
-	  &:first-child {
-		border-left: 10px solid #e2baa4;
-	  }
-
+	.rss-icon,
+	.yelp-icon,
+	.vimeo-icon,
+	.youtube-icon,
+	.twitter-icon,
+	.facebook-icon,
+	.linkedin-icon,
+	.rss-feed-icon,
+	.instagram-icon,
+	.pinterest-icon,
+	.foursquare-icon,
+	.googleplus-icon,
+	.google-plus-icon,
+	.stumbleupon-icon,
+	.stumble-upon-icon {
 	  a {
+		position: relative;
+		width: 24px;
+		height: 24px;
 		display: inline-block;
-		opacity: .8;
+		&:after {
+		  position: absolute;
+		  content: '';
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  background: rgba(#976C53, .7);
+		  border-radius: 3px;
+		  transition: background .2s ease-out;
+		}
 		&:hover {
-		  opacity: 1;
+		  &:after {
+			background: rgba(#976C53, .4);
+		  }
 		}
 	  }
 	}
+
+	li {
+	  padding-top: 5px;
+	  padding-right: 5px;
+	}
   }
 
-  .rss-icon,
-  .yelp-icon,
-  .vimeo-icon,
-  .youtube-icon,
-  .twitter-icon,
-  .facebook-icon,
-  .linkedin-icon,
-  .rss-feed-icon,
-  .instagram-icon,
-  .pinterest-icon,
-  .foursquare-icon,
-  .googleplus-icon,
-  .google-plus-icon,
-  .stumbleupon-icon,
-  .stumble-upon-icon {
-	padding: 0;
-	margin: 0;
-  }
+
 
   &:before {
 	background: green;
@@ -561,6 +579,39 @@ img {
   .powered {
 	text-align: center;
   }
+
+
+  .col-540 {
+	width: 100%;
+	text-align: center;
+	background: url(images/paperBk.png) repeat;
+	margin-bottom: 0;
+	ul {
+	  padding: 0;
+	  margin: 0 auto;
+	  padding-bottom: 15px;
+	  li {
+		&:after {
+		  background: #5a4335;
+		}
+		&:last-child {
+		  &:after {
+			display: none;
+		  }
+		}
+	  }
+	  a {
+		color: #5a4335;
+		&:hover {
+		  color: #ba3a47;
+		}
+	  }
+	}
+  }
+  .col-380 {
+	width: 100%;
+  }
+
 }
 
 .footer-menu {
@@ -662,7 +713,6 @@ only screen and (min-device-pixel-ratio:1.5) {
 @media screen and (min-width: 651px) {
   #footer-wrapper {
 	.grid.col-940 {
-	  margin-top: -18px;
 	  .social-icons {
 		li {
 		  &:first-child{
@@ -671,7 +721,7 @@ only screen and (min-device-pixel-ratio:1.5) {
 			  content: url(images/swirlLeft.png);
 			  position: absolute;
 			  top: -5px;
-			  left: -67px;
+			  left: -62px;
 			}
 		  }
 		  &:last-child{
@@ -680,7 +730,7 @@ only screen and (min-device-pixel-ratio:1.5) {
 			  content: url(images/swirlRight.png);
 			  position: absolute;
 			  top: -5px;
-			  right: -67px;
+			  right: -62px;
 			}
 		  }
 		}
@@ -706,15 +756,7 @@ only screen and (min-device-pixel-ratio:1.5) {
 
 @media screen and (min-width: 981px) {
   #footer-wrapper {
-	margin-top: 15px;
 	padding-bottom: 40px;
-	align-items: flex-start;
-	.col-540 {
-	  display: none;
-	}
-	.col-380 {
-	  width: 100%;
-	}
 	.scroll-top, .copyright, .powered {
 	  margin: 0;
 	}
@@ -907,7 +949,6 @@ only screen and (min-device-pixel-ratio:1.5) {
 
   #footer-wrapper {
 	.grid.col-940 {
-	  margin-top: -15px;
 	}
   }
 
@@ -966,7 +1007,6 @@ only screen and (min-device-pixel-ratio:1.5) {
 
   #footer-wrapper {
 	.grid.col-940 {
-	  margin-top: -10px;
 	}
   }
 
